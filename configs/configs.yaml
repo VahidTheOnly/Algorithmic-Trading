@@ -1,19 +1,12 @@
-# configs/config.yaml
-
-project:
-  name: "BTC-MultiAgent-CRL"
-  version: "1.0.0"
-
+# configs/configs.yaml
 data:
-  raw_path: "data/btc_1min.csv"
-  symbol: "BTC/USDT"
-  timeframes: ["1T", "5T", "15T", "1H"] # T مخفف دقیقه است
-  features: ["close", "volume", "rsi", "macd"]
-  
-processing:
-  test_size: 0.2
-  scaling_method: "robust" # مناسب برای داده‌های دارای نویز مالی
-
-wandb:
-  enabled: true
-  project_name: "thesis_vahid"
+  file_path: "../data/BTCUSDT.csv"
+  separator: "|"
+  train_rows: 1000
+  features:
+    - 'timestamp'
+    - 'open'
+    - 'high'
+    - 'low'
+    - 'close'
+    - 'volume'
