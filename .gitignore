@@ -19,6 +19,9 @@ ENV/
 wandb/
 logs/
 checkpoints/
+*.pth 
+*.pth
+*.h5
 
 # OS
 .DS_Store
